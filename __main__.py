@@ -19,7 +19,7 @@ home_screen = """
 
 
 #gives the forecast for specified amount of days including today for a city
-def forecast(api_key: str, city: str, days: str):
+def forecast(city: str, days: str):
 
     day_data = data_request_forecast(api_key, city, str(int(days) + 1))
 
